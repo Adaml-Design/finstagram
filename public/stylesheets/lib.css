@@ -6,6 +6,7 @@ body, input {
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   color: #244751;
+  background-color: #F0F2F5;
 }
 
 a {
@@ -29,6 +30,13 @@ header {
   overflow: hidden;
   display: flex;
   align-items: baseline;
+  background-color: #ffffff;
+  border-bottom: solid 1px #eaeaea;
+}
+
+header h1 {
+    font-size: 1.75em;
+    margin: 1rem 1rem;
 }
 
 header > .login-info {
@@ -38,6 +46,7 @@ header > .login-info {
 main {
   width: 450px;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .new-finstagram-post {
@@ -59,6 +68,11 @@ main {
   border: solid 1px #244751;
   display: inline-block;
 }
+.finstagram-post{
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
 
 .finstagram-post > * {
   margin-bottom: 1em;
@@ -66,7 +80,8 @@ main {
 
 .user-info {
   display: flex;
-  align-items: baseline;
+  /* align-items: baseline; */
+  align-items: center;
 }
 
 .user-info img {
@@ -79,6 +94,8 @@ main {
 
 .user-info h3 {
   margin: 0 0 0 auto;
+  font-size: .95rem;
+  font-weight: 500;
 }
 
 .photo {
@@ -118,4 +135,17 @@ main {
 
 .new-comment input[type="text"] {
   width: 100%;
+}
+
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.avator{
+    border-radius: 100%;
+}
+
+.bold{
+    font-weight: 700;
 }
