@@ -152,9 +152,3 @@ main {
 .bold{
     font-weight: 700;
 }
-a.photo{
-    transition: padding 0.5s;
-}
-a.photo:hover{
-    padding: 10px;
-}

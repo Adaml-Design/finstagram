@@ -28,3 +28,9 @@ main {
   margin-bottom: 2rem;
   /* padding: 0 16px; */
 }
+a.photo{
+    transition: padding 0.5s;
+}
+a.photo:hover{
+    padding: 10px;
+}
