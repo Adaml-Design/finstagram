@@ -73,6 +73,7 @@ main {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 4px;
+  margin-bottom: 2rem;
 }
 
 .finstagram-post > * {
