@@ -3,7 +3,9 @@
 }
 
 body, input {
-  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  /* font-family: 'Akaya Telivigala', cursive; */
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   color: #244751;
   background-color: #F0F2F5;
@@ -72,7 +74,7 @@ main {
 .finstagram-post{
   background-color: #ffffff;
   border: 1px solid #eaeaea;
-  border-radius: 4px;
+  border-radius: 8px;
   margin-bottom: 2rem;
 }
 
@@ -150,4 +152,10 @@ main {
 
 .bold{
     font-weight: 700;
+}
+a.photo{
+    transition: padding 0.5s;
+}
+a.photo:hover{
+    padding: 10px;
 }
