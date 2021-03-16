@@ -10,7 +10,9 @@ class FinstagramPost < ActiveRecord::Base
         time_ago_in_seconds = Time.now - self.created_at
         time_ago_in_minutes = time_ago_in_seconds / 60
 
-        if time_ago_in_minutes >= 60
+        if time_ago_in_minutes >= 1440
+            "#{(time_ago_in_minutes / 1440).to_i} days ago"
+        elsif time_ago_in_minutes >= 60
             "#{(time_ago_in_minutes / 60).to_i} hours ago"
         else
             "#{time_ago_in_minutes.to_i} minutes ago"
