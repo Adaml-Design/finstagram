@@ -34,3 +34,20 @@ a.photo{
 a.photo:hover{
     padding: 10px;
 }
+
+input{
+    background-color: white;
+    
+}
+button{
+    width: 100%;
+    color: white;
+    background-color: #244751 !important;
+    border-radius: 4px;
+}
+.errors{
+    padding-left: 20px;
+}
+.title{
+    margin: 16px 0;
+}
