@@ -2,9 +2,16 @@
     <h1>Finstagram</h1>
     <div class="login-info">
         <% if current_user %>
-            <img class="avator" src="<%= current_user.avatar_url %>">
-            <a href="#"><%= current_user.username %></a>
-            <a href="/logout">Logout</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="/#">
+                    <img class="avator" src="<%= current_user.avatar_url %>">
+                    <p><%= current_user.username %></p>
+                </a>
+                <div class="dropdown-content">
+                    <p href="/#"><%= current_user.email %></p>
+                    <a href="/logout">Logout</a>
+                </div>
+            </div>
         <% else %>
             <a href="/login">Login</a>
             <a href="/signup">Signup</a>
