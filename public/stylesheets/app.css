@@ -51,3 +51,14 @@ button{
 .title{
     margin: 16px 0;
 }
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.login-info a{
+  margin: 0 8px;
+}
+.avator{
+    width: 32px;
+    height: 32px;
+}

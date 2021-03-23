@@ -1,6 +1,14 @@
-<header>
-    <div class="container">        
-        <h1>Finstagram</h1>
+<header class="container">      
+    <h1>Finstagram</h1>
+    <div class="login-info">
+        <% if current_user %>
+            <img class="avator" src="<%= current_user.avatar_url %>">
+            <a href="#"><%= current_user.username %></a>
+            <a href="/logout">Logout</a>
+        <% else %>
+            <a href="/login">Login</a>
+            <a href="/signup">Signup</a>
+        <% end %>
     </div>
 </header>
 

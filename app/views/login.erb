@@ -1,0 +1,40 @@
+<header class="container">      
+    <h1>Finstagram</h1>
+    <div class="login-info">
+        <% if @current_user %>
+            <%= @current_user.username %>
+            <a href="/logout">Logout</a>
+        <% else %>
+            <!--<a href="/login">Login</a>-->
+            <a href="/signup">Signup</a>
+        <% end %>
+    </div>
+</header>
+
+<main role="main">
+        
+    <article class="finstagram-post">
+        <div class="container"style="margin-top: 1rem;">
+
+            <h2 class="title">Login</h2>
+            
+            <p style="color: red;"><%= @error_message if @error_message %></p>
+
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                    <button class="button" type="submit">Login</button>
+                </div>
+            </form>
+
+        </div>
+    </article>
+
+</main>
