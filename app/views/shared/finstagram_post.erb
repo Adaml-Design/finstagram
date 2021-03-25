@@ -1,0 +1,23 @@
+<article class="finstagram-post">
+    <div class="container"style="margin-top: 1rem;"> 
+        <div class="user-info">
+            <img class="avator" src="<%= finstagram_post.user.avatar_url %>" alt="<%= finstagram_post.user.username %>">
+            <h2><%= finstagram_post.user.username %></h2>
+            <h3><%= finstagram_post.humanized_time_ago %></h3>
+        </div>
+    </div>
+    <a class="photo" href="/finstagram_posts/<%= finstagram_post.id %>">
+        <img src="<%= finstagram_post.photo_url %>" alt="finstagram post from <%= finstagram_post.user.username %>">
+    </a>
+    <div class="container"> 
+        <div class="actions">
+            <%= finstagram_post.like_count %> likes
+            <span class="comment-count"><%= finstagram_post.comment_count %> comments</span>
+        </div>
+        <ul class="comments">
+            <% finstagram_post.comments.each do |comment| %>
+            <li><p><span class="bold"><%= comment.user.username %>:</span> <%= comment.text %></p></li>
+            <% end %>
+        </ul>
+    </div>
+</article>

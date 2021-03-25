@@ -68,7 +68,8 @@ main {
 
 .button {
   padding: .5em;
-  background-color: white;
+  color: #ffffff;
+  background-color: #244751;
   border: solid 1px #244751;
   display: inline-block;
 }
