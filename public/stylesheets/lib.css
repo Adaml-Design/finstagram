@@ -13,7 +13,7 @@ body, input {
 }
 
 a {
-  color: #8da7b8;
+  color: #244751;
   text-decoration: none;
 }
 
@@ -69,9 +69,10 @@ main {
 .button {
   padding: .5em;
   color: #ffffff;
-  background-color: #244751;
-  border: solid 1px #244751;
+  background-color: #3080E8;
+  border: solid 1px #3080E8;
   display: inline-block;
+  border-radius: 4px;
 }
 .finstagram-post{
   background-color: #ffffff;
@@ -115,11 +116,13 @@ main {
 .actions {
   display: flex;
   align-items: baseline;
+  margin-bottom: 16px;
 }
 
 .actions button.user-like {
-  color: #FF2600;
-  border-color: #FF2600;
+  color: #E83A30;
+  border-color: #FDEDED;
+  background-color: #FDEDED ;
 }
 
 .actions .comment-count {

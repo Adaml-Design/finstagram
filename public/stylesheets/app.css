@@ -47,8 +47,11 @@ input{
 button{
     width: 100%;
     color: white;
-    background-color: #244751 !important;
+    background-color: #3080E8;
     border-radius: 4px;
+}
+button.user-like {
+    background-color: #ffffff;
 }
 .errors{
     padding-left: 20px;
@@ -64,7 +67,7 @@ button{
 .login-info a, .login-info p {
   margin: 0 8px;
 }
-.avator{
+img.avator {
     width: 36px;
     height: 36px;
 }
@@ -107,4 +110,38 @@ button{
 }
 .dropdown:hover .dropdown-content {
     display: block;
+}
+a.post {
+  color: inherit;
+  text-decoration: none;
+}
+.comment_style input[type=text]{
+    border: solid 1px #E4E4E4;
+}
+.comment_style{
+    padding-right: 8px;
+    width: 100%;
+}
+
+.new-comment{
+    display: flex;
+    margin-bottom: -8px;
+}
+.button.summit{
+    color: #244751;
+    background-color: #E4E4E4;
+    border: solid 1px #E4E4E4;
+}
+.avator.small{
+    display: inline-block;
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line p{
+    margin: .75rem 0;
 }
