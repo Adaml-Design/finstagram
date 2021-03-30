@@ -6,7 +6,6 @@ class FinstagramPost < ActiveRecord::Base
 
     validates_presence_of :user
     
-    # validations in between association definitions and methods!
     validates :photo_url, :user, presence: true
 
     def humanized_time_ago
