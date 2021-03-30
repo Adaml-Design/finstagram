@@ -1,5 +1,3 @@
-<!-- check if `current_user` exists -->
-
 <% if current_user %>
 
     <!-- check to see if user already has a like for given finstagram post -->
@@ -15,7 +13,6 @@
 
     <% else %>
 
-
         <form action="/likes" method="POST">
             <input type="hidden" name="finstagram_post_id" value="<%= finstagram_post.id %>">
             <button class="button" type="submit">
@@ -28,4 +25,5 @@
 
     <!-- show like count without any form -->
     <%= finstagram_post.like_count %> liked
+    
 <% end %>
