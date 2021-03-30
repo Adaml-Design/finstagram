@@ -1,41 +1,39 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body, input {
-  /* font-family: 'Roboto Condensed', sans-serif; */
-  /* font-family: 'Akaya Telivigala', cursive; */
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  color: #244751;
-  background-color: #F0F2F5;
-  
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    /* font-family: 'Akaya Telivigala', cursive; */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: #244751;
+    background-color: #F0F2F5;
 }
-
 a {
-  color: #244751;
-  text-decoration: none;
+    color: #244751;
+    text-decoration: none;
 }
 
 label {
-  display: block;
-  margin-bottom: .25em;
+    display: block;
+    margin-bottom: .25em;
 }
 
 input[type=text], input[type=password], input[type=email] {
-  border: solid 1px #244751;
-  padding: .5em;
-  /* width: 200px; */
-  width: 100%;
-  font-size: 1em;
+    border: solid 1px #244751;
+    padding: .5em;
+    /* width: 200px; */
+    width: 100%;
+    font-size: 1em;
 }
 
 header {
-  overflow: hidden;
-  display: flex;
-  align-items: baseline;
-  background-color: #ffffff;
-  border-bottom: solid 1px #eaeaea;
+    overflow: hidden;
+    display: flex;
+    align-items: baseline;
+    background-color: #ffffff;
+    border-bottom: solid 1px #eaeaea;
 }
 
 header h1 {
@@ -44,117 +42,100 @@ header h1 {
 }
 
 header > .login-info {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 main {
-  width: 450px;
-  margin: 0 auto;
-  margin-top: 2rem;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .new-finstagram-post {
-  text-align: center;
-  margin-bottom: 2em;
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 .new-finstagram-post > .button {
-  display: inline-block;
-  padding: 1em;
-  width: 100%;
-  border-radius: 4px;
-  box-sizing: border-box;
+    display: inline-block;
+    padding: 1em;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-
 .button {
-  padding: .5em;
-  color: #ffffff;
-  background-color: #3080E8;
-  border: solid 1px #3080E8;
-  display: inline-block;
-  border-radius: 4px;
+    padding: .5em;
+    color: #ffffff;
+    background-color: #3080E8;
+    border: solid 1px #3080E8;
+    display: inline-block;
+    border-radius: 4px;
 }
 .finstagram-post{
-  background-color: #ffffff;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
 }
-
 .finstagram-post > * {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
-
 .user-info {
-  display: flex;
-  /* align-items: baseline; */
-  align-items: center;
+    display: flex;
+    /* align-items: baseline; */
+    align-items: center;
 }
-
 .user-info img {
-  width: 40px;
+    width: 40px;
 }
-
 .user-info h2 {
-  margin: 0 0 0 .5em;
+    margin: 0 0 0 .5em;
 }
-
 .user-info h3 {
-  margin: 0 0 0 auto;
-  font-size: .95rem;
-  font-weight: 500;
+    margin: 0 0 0 auto;
+    font-size: .95rem;
+    font-weight: 500;
 }
-
 .photo {
-  display: block;
+    display: block;
 }
-
 .photo img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
-
 .actions {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 16px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 16px;
 }
-
 .actions button.user-like {
-  color: #E83A30;
-  border-color: #FDEDED;
-  background-color: #FDEDED ;
+    color: #E83A30;
+    border-color: #FDEDED;
+    background-color: #FDEDED ;
 }
-
 .actions .comment-count {
-  margin-left: auto;
+    margin-left: auto;
 }
-
 .comments {
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0;
-  list-style-type: none;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    list-style-type: none;
 }
-
 .form-group {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
-
 .new-comment input[type="text"] {
-  width: 100%;
+    width: 100%;
 }
-
 .container{
-  padding-left: 16px;
-  padding-right: 16px;
-  align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
 }
-
 .avator{
     border-radius: 100%;
 }
-
 .bold{
     font-weight: 700;
 }

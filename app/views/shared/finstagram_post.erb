@@ -9,19 +9,18 @@
     <a class="photo" href="/finstagram_posts/<%= finstagram_post.id %>">
         <img src="<%= finstagram_post.photo_url %>" alt="finstagram post from <%= finstagram_post.user.username %>">
     </a>
-    
-        <div class="container"> 
-            <div class="actions">
-                <%= erb(:"shared/likes", { locals: { finstagram_post: finstagram_post }}) %>
-                <a class="post comment-count" href="/finstagram_posts/<%= finstagram_post.id %>" class="comment-count"><%= finstagram_post.comment_count %> comments</a>
-            </div>
-            <% if current_user && allow_new_comment %>
-                <%= erb(:"shared/new_comment", { locals: { finstagram_post: finstagram_post }}) %>
-            <% end %>
-            <ul class="comments">
-                <% finstagram_post.comments.each do |comment| %>
-                <li><div class="line"><img class="avator small" src="<%= comment.user.avatar_url %>" alt="<%= comment.user.username %>"><p><span class="bold"><%= comment.user.username %>:</span> <%= comment.text %></p></div></li>
-                <% end %>
-            </ul>
+    <div class="container"> 
+        <div class="actions">
+            <%= erb(:"shared/likes", { locals: { finstagram_post: finstagram_post }}) %>
+            <a class="post comment-count" href="/finstagram_posts/<%= finstagram_post.id %>" class="comment-count"><%= finstagram_post.comment_count %> comments</a>
         </div>
+        <% if current_user && allow_new_comment %>
+            <%= erb(:"shared/new_comment", { locals: { finstagram_post: finstagram_post }}) %>
+        <% end %>
+        <ul class="comments">
+            <% finstagram_post.comments.each do |comment| %>
+            <li><div class="line"><img class="avator small" src="<%= comment.user.avatar_url %>" alt="<%= comment.user.username %>"><p><span class="bold"><%= comment.user.username %>:</span> <%= comment.text %></p></div></li>
+            <% end %>
+        </ul>
+    </div>
 </article>
