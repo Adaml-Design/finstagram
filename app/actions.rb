@@ -64,7 +64,7 @@ post '/finstagram_posts' do
     @finstagram_post = FinstagramPost.new({ photo_url: photo_url, user_id: current_user.id })
 
     if @finstagram_post.save
-        redirect(to('/'))
+        redirect to('/')
     else
         erb(:"finstagram_posts/new")
     end
